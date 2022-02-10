@@ -1,7 +1,6 @@
 package codeWars7.tests;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
 
