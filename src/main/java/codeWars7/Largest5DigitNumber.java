@@ -1,21 +1,14 @@
 package codeWars7;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 public class Largest5DigitNumber {
 	
 		public static int run(String num) {
-					
-			List<Integer> numbers5Digits = new ArrayList<>();
-			
-			while(num.length() >= 5) {
-				String sub5DigitStr = num.substring(0, 5);
-				numbers5Digits.add(Integer.parseInt(sub5DigitStr));
-				num = num.substring(1);
-			}
-			
-			return Collections.max(numbers5Digits);
+		      
+			int max = 0;
+		        for (int i = 0; i < num.length()-4; i++) {
+		            max = Math.max(Integer.valueOf(num.substring(i, i+5)), max);
+		        }
+
+		        return max;
 		}
 	}
