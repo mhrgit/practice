@@ -1,7 +1,6 @@
 package projectEuler.tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.Test;
 
 import projectEuler.MultiplesOf3Or5;
